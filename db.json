@@ -1,18 +1,18 @@
 {
   "logs": [
     {
+      "id": 1,
       "message": "Changed network card in server 007",
       "attention": false,
-      "tech": "John Doe",
-      "date": "2021-09-20T17:58:57.891Z",
-      "id": 1
+      "tech": "Harry White",
+      "date": "2021-09-21T12:16:29.069Z"
     },
     {
       "id": 2,
       "message": "Fixed the Hard drive on workstation 002",
       "attention": false,
-      "tech": "John Doe",
-      "date": "2021-09-20T20:46:49.559Z"
+      "tech": "Harry White",
+      "date": "2021-09-21T12:17:21.959Z"
     },
     {
       "message": "1123 wireless down",
@@ -37,11 +37,6 @@
       "id": 3,
       "firstName": "Sara",
       "lastName": "Wilson"
-    },
-    {
-      "id": 4,
-      "firstName": "Harry",
-      "lastName": "White"
     }
   ]
 }

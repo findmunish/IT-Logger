@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect } from 'react';
-import Searchbar from './components/layout/Searchbar';
+import SearchBar from './components/layout/SearchBar';
 import Logs from './components/logs/Logs';
 import AddBtn from './components/layout/AddBtn';
 import AddLogModal from './components/logs/AddLogModal';
@@ -14,23 +14,25 @@ import M from 'materialize-css/dist/js/materialize.min.js';
 import './App.css';
 
 const App = () => {
-  useEffect(()=> {
-    // Initialize Materialize JS
+  useEffect(() => {
+    // Init Materialize JS
     M.AutoInit();
   });
-  return <Provider store={store}>
+  return (
+    <Provider store={store}>
       <Fragment>
-        <Searchbar />
-        <div className="container">
-          <AddBtn />
-          <AddLogModal />
-          <EditLogModal />
-          <AddTechModal />
-          <TechListModal />
-          <Logs />
-        </div>
-    </Fragment>
-  </Provider>
-}
+        <SearchBar />
+          <div className='container'>
+            <AddBtn />
+            <AddLogModal />
+            <EditLogModal />
+            <AddTechModal />
+            <TechListModal />
+            <Logs />
+          </div>
+      </Fragment>
+    </Provider>
+  );
+};
 
 export default App;

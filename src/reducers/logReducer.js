@@ -25,7 +25,7 @@ const logReducer = (state = initialState, action) => {
         case SET_LOADING:
             return { ...state, loading: true };
         case LOGS_ERROR:
-            return {...state, error: action.payload };
+            return {...state, error: action.payload, loading: false,  };
         default: return state;
     }
 }

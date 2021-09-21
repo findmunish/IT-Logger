@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { searchLogs } from '../../actions/logActions';
 
-const Searchbar = ( { searchLogs } ) => {
+const SearchBar = ( { searchLogs } ) => {
     const text = useRef('');
 
     const onChange = e => {
@@ -25,6 +25,6 @@ const Searchbar = ( { searchLogs } ) => {
     )
 }
 
-Searchbar.prototype = {searchLogs: PropTypes.func.isRequired };
+SearchBar.prototype = {searchLogs: PropTypes.func.isRequired };
 
-export default connect(null, { searchLogs })(Searchbar);
+export default connect(null, { searchLogs })(SearchBar);
