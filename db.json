@@ -4,15 +4,15 @@
       "id": 1,
       "message": "Changed network card in server 007",
       "attention": false,
-      "tech": "Harry White",
-      "date": "2021-09-21T12:16:29.069Z"
+      "tech": "Sam Smith",
+      "date": "2021-09-21T13:00:13.321Z"
     },
     {
       "id": 2,
       "message": "Fixed the Hard drive on workstation 002",
       "attention": false,
-      "tech": "Harry White",
-      "date": "2021-09-21T12:17:21.959Z"
+      "tech": "Sam Smith",
+      "date": "2021-09-21T13:00:05.846Z"
     },
     {
       "message": "1123 wireless down",
