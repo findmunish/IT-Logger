@@ -15,7 +15,7 @@ const logReducer = (state = initialState, action) => {
         case DELETE_LOG:
             return { ...state, logs: state.logs.filter(log => log.id !== action.payload), loading: false }
         case UPDATE_LOG:
-            return { ...state, logs: state.logs.filter(log => log.id === action.payload.id ? action.payload : log), loading: false };
+            return { ...state, logs: state.logs.map(log => log.id === action.payload.id ? action.payload : log), loading: false };
         case SEARCH_LOGS:
             return { ...state, logs: action.payload };
         case SET_CURRENT:
